@@ -1,3 +1,6 @@
+import app from './app';
 import { PORT } from './config';
 
-console.log(`Hello, TypeScript! ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
+});
